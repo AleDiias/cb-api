@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: vnx-db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: vnxdb_chatbot
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - vnx-chatbot-network
+
+networks:
+  vnx-chatbot-network:
+    driver: bridge

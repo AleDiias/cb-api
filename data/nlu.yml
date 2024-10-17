@@ -1,0 +1,27 @@
+version: "3.1"
+
+nlu:
+  - intent: saudacao
+    examples: |
+      - Olá
+      - Oi
+      - Bom dia
+      - Boa tarde
+      - Boa noite
+      - Noite
+      - Dia
+      - Tarde
+      - Ei
+
+  - intent: despedida
+    examples: |
+      - Tchau
+      - Até logo
+      - Até mais
+      - Adeus
+
+  - intent: perguntar_clima
+    examples: |
+      - Como está o tempo?
+      - Está frio hoje?
+      - Vai chover?
