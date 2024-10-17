@@ -39,11 +39,11 @@ Esta API é parte integrante do projeto CB-Chatbot. Para rodar o projeto correta
 4. Para acessar o banco pelo console:
    ```bash
    docker exec -it vnx-db-container mysql -u root -p
-   adicionar a senha que esta no docker-compose.yml
 
    use vnxdb_chatbot
-   show tables para verificar se as tabelas foram criadas.
    ```
+   A senha esta no docker-compose.yml
+   show tables para verificar se as tabelas foram criadas (utters e intents).
 
 
 ### Observação Importante
