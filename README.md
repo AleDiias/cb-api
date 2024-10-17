@@ -17,8 +17,8 @@ Esta API é parte integrante do projeto CB-Chatbot. Para rodar o projeto correta
   ```
   Se você precisar alterar a versão do Node.js, recomendamos usar o [nvm](https://github.com/nvm-sh/nvm) para gerenciar diferentes versões de Node.js. Para instalar a versão correta, execute:
   ```bash
-  nvm install 16.16.0
-  nvm use 16.16.0
+  nvm install 20.15.0
+  nvm use 20.15.0
   ```
 
 ### Instruções para rodar o Docker
@@ -58,8 +58,12 @@ Após configurar e subir o Docker, você pode rodar a API com o seguinte comando
    ```bash
    npm install
    ```
+2. Instale puppeteer para funcionar corretamente o QRCODE do WHATSAPP:
+   ```bash
+   npm install puppeteer
+   ```
 
-2. Execute a API em modo de desenvolvimento:
+3. Execute a API em modo de desenvolvimento:
    ```bash
    npm run dev
    ```
